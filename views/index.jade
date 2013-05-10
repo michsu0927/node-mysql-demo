@@ -1,0 +1,19 @@
+extends layout
+
+block content
+	div.container
+		div.row.alert.alert-small.alert-info(style="margin:0px;")
+			div.span3
+				h3=title
+			div.span8
+				form.form-inline(method='post', enctype='multipart/form-data' ,style="margin:0px;" )
+					input(type="hidden",name="mode",value="login")
+					span!='帳號: <input type="text" name="account" />'
+					span!='密碼: <input type="password" name="password" />'
+					span!='<button type="submit" class="btn"><i class="icon-ok"></i>登入</button></p>'
+	div.container
+		div.row-fluid
+			div.span3.well(style="min-height:300px;")
+				p='請先登入'
+			div.span9
+				h3(style="text-align:center;")='請先登入'

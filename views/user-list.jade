@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  div.container
+    div.row.alert.alert-small.alert-info(style="margin:0px;")
+      div.span3
+        h3=title
+      div.span8
+  div.container
+    div.row-fluid
+      !=menu
+      div.span9
+        table.table.table-bordered
+          thead
+            tr
+              th='帳號'
+              th='名稱'
+              th='身份'
+              th='email'
+              th='登入時間'
+              th!='&nbsp;'
+          tbody
+            !=rows
+        !=pageNation

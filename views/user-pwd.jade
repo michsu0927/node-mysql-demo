@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  div.container
+    div.row.alert.alert-small.alert-info(style="margin:0px;")
+      div.span3
+        h3=title
+      div.span8
+  div.container
+    div.row-fluid
+      !=menu
+      div.span9
+        form.form-vertical(method='post' , enctype='multipart/form-data')
+          input(type="hidden",name="mode",value="#{nextmode}")
+          fieldset
+            legend="修改密碼"
+            input(name="account",type="hidden",value="#{acc}")
+            p!='密碼: <input type="password" name="password" />'
+            p
+                button.btn.btn-info(type="submit")!='<i class="icon-edit"></i>修改</button></p>'
+                  
+

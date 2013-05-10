@@ -1,0 +1,18 @@
+doctype 5
+html
+  head
+    block head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap/css/bootstrap-responsive.min.css')
+        //link(rel='stylesheet', href='/stylesheets/bootstrap/css/bootstrap.journal.css')
+        script(src='/stylesheets/bootstrap/js/jquery-1.7.2.min.js')
+        script(src='/stylesheets/bootstrap/js/bootstrap.js')
+        
+    //if lt IE 9
+        block IE
+            script(src='/stylesheets/bootstrap/js/html5shiv.js')
+
+  body
+    block content

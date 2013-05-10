@@ -1,0 +1,10 @@
+div.span3.well(style="min-height:300px;")
+	ul.nav.nav-pills.nav-stacked
+		li(class="#{userAddClass}")
+			a(href="#{webroot}/users/add")!='<i class="icon-cog"></i>新增使用者</a>'
+		li(class="#{userManageClass}")
+			a(href="#{webroot}/users/list")!='<i class="icon-cog"></i>使用者管理</a>'
+		li(class="#{PwdClass}")
+			a(href="#{webroot}/users/pwd?mode=doSelfChangepwdForm")!='<i class="icon-cog"></i>修改密碼</a>'
+		li
+			a(href="#{webroot}/logout")!='<i class="icon-off"></i>登出</a></li>'
