@@ -16,3 +16,6 @@ mkdir ~/web , cd ~/web , npm install express
 ./node_modules/express/bin/express .
 6. Copy all file in ~/web
 7. npm install .
+8. mysql -u user -p db < db.sql
+9. Setting your mysql db user password in model/config.js
+10. All done just node app.js
